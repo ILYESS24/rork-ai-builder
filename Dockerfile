@@ -11,7 +11,7 @@ COPY prisma ./prisma/
 
 # Installer les dépendances
 FROM base AS deps
-RUN npm ci --only=production && npm cache clean --force
+RUN npm ci --legacy-peer-deps && npm cache clean --force
 
 # Build de l'application
 FROM base AS builder

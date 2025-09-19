@@ -1,0 +1,42 @@
+# Configuration Snyk pour Rork AI Builder
+# https://docs.snyk.io/features/fixing-and-prioritizing-issues/security-policies/introduction-to-security-policies
+
+# Ignorer certaines vulnérabilités mineures en développement
+ignore: {}
+
+# Configuration des politiques de sécurité
+policy: |
+  # Ignorer les vulnérabilités de développement pour certaines dépendances
+  ignore:
+    # Ignorer les vulnérabilités de test dans Jest
+    SNYK-JS-JEST-1017037:
+      - '*':
+          reason: 'Vulnérabilité dans les tests de développement uniquement'
+          expires: '2024-12-31T23:59:59.999Z'
+    
+    # Ignorer les vulnérabilités de build dans certains packages
+    SNYK-JS-WEBPACK-1024858:
+      - '*':
+          reason: 'Vulnérabilité dans les outils de build, pas en production'
+          expires: '2024-12-31T23:59:59.999Z'
+
+# Configuration des patchs automatiques
+patch: {}
+
+# Configuration des licences
+license: |
+  # Politique de licences pour les dépendances
+  license:
+    # Autoriser les licences MIT, Apache, BSD
+    allow:
+      - MIT
+      - Apache-2.0
+      - BSD-2-Clause
+      - BSD-3-Clause
+      - ISC
+    
+    # Refuser les licences GPL
+    deny:
+      - GPL-2.0
+      - GPL-3.0
+      - AGPL-3.0

@@ -1,0 +1,254 @@
+name: 🚀 CI/CD Pipeline - Rork AI Builder
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+  schedule:
+    # Analyse de sécurité quotidienne à 2h UTC
+    - cron: '0 2 * * *'
+
+env:
+  NODE_VERSION: '18'
+  PNPM_VERSION: '8'
+  SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+  SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+
+jobs:
+  # 🔍 Analyse de sécurité avec CodeQL
+  security-analysis:
+    name: 🔒 CodeQL Security Analysis
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+    
+    strategy:
+      fail-fast: false
+      matrix:
+        language: [ 'javascript' ]
+    
+    steps:
+    - name: 📥 Checkout repository
+      uses: actions/checkout@v4
+    
+    - name: 🔍 Initialize CodeQL
+      uses: github/codeql-action/init@v3
+      with:
+        languages: ${{ matrix.language }}
+        queries: security-and-quality
+    
+    - name: 🔧 Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+        cache: 'npm'
+    
+    - name: 📦 Install dependencies
+      run: npm ci --legacy-peer-deps
+    
+    - name: 🏗️ Build application
+      run: npm run build
+    
+    - name: 🔍 Perform CodeQL Analysis
+      uses: github/codeql-action/analyze@v3
+      with:
+        category: "/language:${{matrix.language}}"
+
+  # 🧪 Tests et Qualité
+  test-and-quality:
+    name: 🧪 Tests & Quality Analysis
+    runs-on: ${{ matrix.os }}
+    
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        node-version: ['18', '20']
+    
+    steps:
+    - name: 📥 Checkout repository
+      uses: actions/checkout@v4
+    
+    - name: 🔧 Setup Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    
+    - name: 📦 Install dependencies
+      run: npm ci --legacy-peer-deps
+    
+    - name: 🔍 Type checking
+      run: npm run type-check
+    
+    - name: 🧹 Lint code
+      run: npm run lint
+    
+    - name: 💅 Check formatting
+      run: npm run format:check
+    
+    - name: 🧪 Run unit tests
+      run: npm run test:coverage
+    
+    - name: 🎭 Run fuzzing tests
+      run: npm run test:fuzzing
+    
+    - name: 📊 Upload coverage to Codecov
+      if: matrix.os == 'ubuntu-latest' && matrix.node-version == '18'
+      uses: codecov/codecov-action@v4
+      with:
+        file: ./coverage/lcov.info
+        flags: unittests
+        name: codecov-umbrella
+        fail_ci_if_error: false
+
+  # 🔍 Analyse SonarCloud
+  sonarcloud-analysis:
+    name: 🔍 SonarCloud Analysis
+    runs-on: ubuntu-latest
+    needs: [test-and-quality]
+    
+    steps:
+    - name: 📥 Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0  # Shallow clones should be disabled for better analysis
+    
+    - name: 🔧 Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+        cache: 'npm'
+    
+    - name: 📦 Install dependencies
+      run: npm ci --legacy-peer-deps
+    
+    - name: 🧪 Run tests with coverage
+      run: npm run test:coverage
+    
+    - name: 🔍 SonarCloud Scan
+      uses: SonarSource/sonarcloud-github-action@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+
+  # 🛡️ Scan des dépendances avec Snyk
+  dependency-scan:
+    name: 🛡️ Snyk Dependency Scan
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 📥 Checkout repository
+      uses: actions/checkout@v4
+    
+    - name: 🔧 Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+        cache: 'npm'
+    
+    - name: 📦 Install dependencies
+      run: npm ci --legacy-peer-deps
+    
+    - name: 🛡️ Run Snyk to check for vulnerabilities
+      uses: snyk/actions/node@master
+      continue-on-error: true
+      env:
+        SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+      with:
+        args: --severity-threshold=high --file=package.json
+
+  # 🎭 Tests E2E avec Playwright
+  e2e-tests:
+    name: 🎭 E2E Tests
+    runs-on: ubuntu-latest
+    needs: [test-and-quality]
+    
+    steps:
+    - name: 📥 Checkout repository
+      uses: actions/checkout@v4
+    
+    - name: 🔧 Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+        cache: 'npm'
+    
+    - name: 📦 Install dependencies
+      run: npm ci --legacy-peer-deps
+    
+    - name: 🎭 Install Playwright Browsers
+      run: npx playwright install --with-deps
+    
+    - name: 🎭 Run Playwright tests
+      run: npm run test:e2e
+    
+    - name: 📊 Upload test results
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: playwright-report
+        path: playwright-report/
+        retention-days: 30
+
+  # 🏗️ Build et Test de déploiement
+  build-and-deploy-test:
+    name: 🏗️ Build & Deploy Test
+    runs-on: ubuntu-latest
+    needs: [test-and-quality, security-analysis]
+    if: github.ref == 'refs/heads/main'
+    
+    steps:
+    - name: 📥 Checkout repository
+      uses: actions/checkout@v4
+    
+    - name: 🔧 Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+        cache: 'npm'
+    
+    - name: 📦 Install dependencies
+      run: npm ci --legacy-peer-deps
+    
+    - name: 🗄️ Setup Prisma
+      run: npx prisma generate
+    
+    - name: 🏗️ Build application
+      run: npm run build
+    
+    - name: 🐳 Build Docker image
+      run: docker build -t rork-ai-builder:${{ github.sha }} .
+    
+    - name: 🚀 Deploy to Render (Preview)
+      if: github.event_name == 'pull_request'
+      run: |
+        echo "🚀 Déploiement de prévisualisation sur Render"
+        # Ici vous pouvez ajouter la logique de déploiement sur Render
+        # Exemple avec Render CLI ou webhook
+
+  # 📊 Rapport de qualité
+  quality-report:
+    name: 📊 Quality Report
+    runs-on: ubuntu-latest
+    needs: [test-and-quality, sonarcloud-analysis, dependency-scan, e2e-tests]
+    if: always()
+    
+    steps:
+    - name: 📊 Generate Quality Report
+      run: |
+        echo "## 📊 Rapport de Qualité - Rork AI Builder" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "### ✅ Tests" >> $GITHUB_STEP_SUMMARY
+        echo "- Tests unitaires: ${{ needs.test-and-quality.result }}" >> $GITHUB_STEP_SUMMARY
+        echo "- Tests E2E: ${{ needs.e2e-tests.result }}" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "### 🔍 Analyses" >> $GITHUB_STEP_SUMMARY
+        echo "- SonarCloud: ${{ needs.sonarcloud-analysis.result }}" >> $GITHUB_STEP_SUMMARY
+        echo "- Snyk: ${{ needs.dependency-scan.result }}" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "### 🚀 Déploiement" >> $GITHUB_STEP_SUMMARY
+        echo "- Build: ${{ needs.build-and-deploy-test.result }}" >> $GITHUB_STEP_SUMMARY

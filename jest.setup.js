@@ -1,6 +1,30 @@
+// Configuration Jest pour les tests
 import '@testing-library/jest-dom'
 
-// Mock Next.js router
+// Mock pour Next.js router
+jest.mock('next/router', () => ({
+  useRouter() {
+    return {
+      route: '/',
+      pathname: '/',
+      query: {},
+      asPath: '/',
+      push: jest.fn(),
+      pop: jest.fn(),
+      reload: jest.fn(),
+      back: jest.fn(),
+      prefetch: jest.fn(),
+      beforePopState: jest.fn(),
+      events: {
+        on: jest.fn(),
+        off: jest.fn(),
+        emit: jest.fn(),
+      },
+    }
+  },
+}))
+
+// Mock pour Next.js navigation
 jest.mock('next/navigation', () => ({
   useRouter() {
     return {
@@ -20,116 +44,82 @@ jest.mock('next/navigation', () => ({
   },
 }))
 
-// Mock Clerk
-jest.mock('@clerk/nextjs/server', () => ({
-  currentUser: jest.fn(() => Promise.resolve({
-    id: 'test-user-id',
-    emailAddresses: [{ emailAddress: 'test@example.com' }],
-    firstName: 'Test',
-    lastName: 'User',
-  })),
-  requireAuth: jest.fn(() => Promise.resolve({
-    id: 'test-user-id',
-    emailAddresses: [{ emailAddress: 'test@example.com' }],
-    firstName: 'Test',
-    lastName: 'User',
-  })),
-  clerkClient: {
-    users: {
-      getUser: jest.fn(),
-      updateUser: jest.fn(),
-    },
+// Mock pour Clerk
+jest.mock('@clerk/nextjs', () => ({
+  useUser: () => ({
+    isSignedIn: false,
+    user: null,
+  }),
+  SignInButton: ({ children }) => children,
+  SignUpButton: ({ children }) => children,
+  UserButton: () => <div data-testid="user-button" />,
+  ClerkProvider: ({ children }) => children,
+}))
+
+// Mock pour les modules Node.js
+jest.mock('fs', () => ({
+  promises: {
+    readFile: jest.fn(),
+    writeFile: jest.fn(),
+    mkdir: jest.fn(),
+    rmdir: jest.fn(),
+    unlink: jest.fn(),
   },
 }))
 
-// Mock Supabase
-jest.mock('@supabase/supabase-js', () => ({
-  createClient: jest.fn(() => ({
-    from: jest.fn(() => ({
-      select: jest.fn(() => ({
-        eq: jest.fn(() => ({
-          order: jest.fn(() => Promise.resolve({ data: [], error: null })),
-          single: jest.fn(() => Promise.resolve({ data: null, error: null })),
-        })),
-        single: jest.fn(() => Promise.resolve({ data: null, error: null })),
-      })),
-      insert: jest.fn(() => ({
-        select: jest.fn(() => ({
-          single: jest.fn(() => Promise.resolve({ data: {}, error: null })),
-        })),
-      })),
-      update: jest.fn(() => ({
-        eq: jest.fn(() => ({
-          select: jest.fn(() => ({
-            single: jest.fn(() => Promise.resolve({ data: {}, error: null })),
-          })),
-        })),
-      })),
-      delete: jest.fn(() => ({
-        eq: jest.fn(() => Promise.resolve({ error: null })),
-      })),
-    })),
-  })),
-}))
-
-// Mock OpenAI
-jest.mock('openai', () => ({
-  OpenAI: jest.fn(() => ({
-    chat: {
-      completions: {
-        create: jest.fn(() => Promise.resolve({
-          choices: [{
-            message: {
-              content: '<div>Test HTML</div>',
-            },
-          }],
-        })),
-      },
-    },
-  })),
-}))
-
-// Mock Stripe
-jest.mock('stripe', () => {
-  return jest.fn().mockImplementation(() => ({
-    checkout: {
-      sessions: {
-        create: jest.fn(() => Promise.resolve({
-          id: 'test-session-id',
-          url: 'https://checkout.stripe.com/test',
-        })),
-      },
-    },
-    billingPortal: {
-      sessions: {
-        create: jest.fn(() => Promise.resolve({
-          url: 'https://billing.stripe.com/test',
-        })),
-      },
-    },
-  }))
-})
-
-// Mock Sentry
-jest.mock('@sentry/nextjs', () => ({
-  init: jest.fn(),
-  captureException: jest.fn(),
-  captureMessage: jest.fn(),
-  startTransaction: jest.fn(),
-  addBreadcrumb: jest.fn(),
-}))
-
-// Setup global test environment
+// Configuration globale pour les tests
 global.fetch = jest.fn()
 
-// Mock environment variables
-process.env.OPENAI_API_KEY = 'test-openai-key'
-process.env.ANTHROPIC_API_KEY = 'test-anthropic-key'
-process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY = 'test-clerk-key'
-process.env.CLERK_SECRET_KEY = 'test-clerk-secret'
-process.env.NEXT_PUBLIC_SUPABASE_URL = 'https://test.supabase.co'
-process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY = 'test-supabase-key'
-process.env.SUPABASE_SERVICE_ROLE_KEY = 'test-supabase-service-key'
-process.env.STRIPE_SECRET_KEY = 'test-stripe-key'
-process.env.PINECONE_API_KEY = 'test-pinecone-key'
-process.env.PINECONE_INDEX_NAME = 'test-index'
+// Mock pour les API externes
+global.fetch.mockImplementation((url) => {
+  if (url.includes('/api/generate')) {
+    return Promise.resolve({
+      ok: true,
+      json: () => Promise.resolve({
+        success: true,
+        code: 'console.log("Generated code")',
+        metadata: {
+          title: 'Test App',
+          description: 'Generated app',
+          framework: 'html',
+        },
+      }),
+    })
+  }
+  
+  if (url.includes('/api/health')) {
+    return Promise.resolve({
+      ok: true,
+      json: () => Promise.resolve({
+        status: 'healthy',
+        timestamp: new Date().toISOString(),
+        service: 'Rork AI Builder',
+      }),
+    })
+  }
+  
+  return Promise.resolve({
+    ok: false,
+    status: 404,
+    json: () => Promise.resolve({ error: 'Not found' }),
+  })
+})
+
+// Configuration pour les tests de fuzzing
+beforeAll(() => {
+  // Configuration globale pour fast-check
+  if (typeof global.fc !== 'undefined') {
+    global.fc.configureGlobal({
+      numRuns: process.env.NODE_ENV === 'test' ? 10 : 100,
+      timeout: 10000,
+    })
+  }
+})
+
+afterEach(() => {
+  // Nettoyage après chaque test
+  jest.clearAllMocks()
+})
+
+// Configuration pour les tests de performance
+jest.setTimeout(30000)

@@ -1,0 +1,312 @@
+// Schema Prisma avancé pour Rork AI Builder
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Utilisateurs avec authentification Clerk
+model User {
+  id                    String    @id @default(uuid())
+  clerkId               String    @unique @map("clerk_id")
+  email                 String    @unique
+  firstName             String?   @map("first_name")
+  lastName              String?   @map("last_name")
+  imageUrl              String?   @map("image_url")
+  bio                   String?
+  website               String?
+  location              String?
+  
+  // Stripe
+  stripeCustomerId      String?   @unique @map("stripe_customer_id")
+  stripeSubscriptionId  String?   @unique @map("stripe_subscription_id")
+  stripePriceId         String?   @map("stripe_price_id")
+  stripeCurrentPeriodEnd DateTime? @map("stripe_current_period_end")
+  
+  // Plan et limites
+  plan                  Plan      @default(FREE)
+  generationsUsed       Int       @default(0) @map("generations_used")
+  projectsCount         Int       @default(0) @map("projects_count")
+  storageUsed           BigInt    @default(0) @map("storage_used") // en bytes
+  
+  // Métadonnées
+  createdAt             DateTime  @default(now()) @map("created_at")
+  updatedAt             DateTime  @updatedAt @map("updated_at")
+  lastLoginAt           DateTime? @map("last_login_at")
+  
+  // Relations
+  projects              Project[]
+  templates             Template[]
+  apiKeys               ApiKey[]
+  sessions              Session[]
+  collaborations        Collaboration[]
+  notifications         Notification[]
+  usageLogs             UsageLog[]
+  
+  @@map("users")
+}
+
+// Projets utilisateur
+model Project {
+  id                    String    @id @default(uuid())
+  userId                String    @map("user_id")
+  name                  String
+  description           String?
+  code                  String    // Code HTML/CSS/JS complet
+  framework             Framework @default(HTML)
+  language              String    @default("html")
+  
+  // Métadonnées du code
+  linesOfCode           Int       @default(0) @map("lines_of_code")
+  complexity            Complexity @default(INTERMEDIATE)
+  features              String[]  // Array des fonctionnalités
+  tags                  String[]  // Tags pour la recherche
+  
+  // Préférences
+  isPublic              Boolean   @default(false) @map("is_public")
+  isTemplate            Boolean   @default(false) @map("is_template")
+  isForked              Boolean   @default(false) @map("is_forked")
+  forkedFromId          String?   @map("forked_from_id")
+  
+  // Performance et analytics
+  viewsCount            Int       @default(0) @map("views_count")
+  likesCount            Int       @default(0) @map("likes_count")
+  forksCount            Int       @default(0) @map("forks_count")
+  
+  // Timestamps
+  createdAt             DateTime  @default(now()) @map("created_at")
+  updatedAt             DateTime  @updatedAt @map("updated_at")
+  lastModifiedAt        DateTime  @default(now()) @map("last_modified_at")
+  
+  // Relations
+  user                  User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  forkedFrom            Project?  @relation("ProjectFork", fields: [forkedFromId], references: [id])
+  forks                 Project[] @relation("ProjectFork")
+  versions              ProjectVersion[]
+  collaborations        Collaboration[]
+  comments              Comment[]
+  
+  @@map("projects")
+}
+
+// Versions des projets pour l'historique
+model ProjectVersion {
+  id                    String    @id @default(uuid())
+  projectId             String    @map("project_id")
+  versionNumber         Int       @map("version_number")
+  name                  String?
+  code                  String
+  changes               String?   // Description des changements
+  
+  createdAt             DateTime  @default(now()) @map("created_at")
+  
+  project               Project   @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  
+  @@unique([projectId, versionNumber])
+  @@map("project_versions")
+}
+
+// Templates prédéfinis
+model Template {
+  id                    String    @id @default(uuid())
+  userId                String    @map("user_id") // null pour templates officiels
+  name                  String
+  description           String
+  code                  String
+  framework             Framework @default(HTML)
+  category              TemplateCategory
+  industry              String?
+  tags                  String[]
+  
+  // Métadonnées
+  isOfficial            Boolean   @default(false) @map("is_official")
+  isPremium             Boolean   @default(false) @map("is_premium")
+  price                 Decimal?  @db.Decimal(10,2)
+  
+  // Analytics
+  downloadsCount        Int       @default(0) @map("downloads_count")
+  rating                Float     @default(0)
+  reviewsCount          Int       @default(0) @map("reviews_count")
+  
+  // Assets
+  previewImage          String?   @map("preview_image")
+  thumbnailImage        String?   @map("thumbnail_image")
+  
+  createdAt             DateTime  @default(now()) @map("created_at")
+  updatedAt             DateTime  @updatedAt @map("updated_at")
+  
+  user                  User?     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  reviews               TemplateReview[]
+  
+  @@map("templates")
+}
+
+// Commentaires et reviews
+model Comment {
+  id                    String    @id @default(uuid())
+  projectId             String    @map("project_id")
+  userId                String    @map("user_id")
+  content               String
+  parentId              String?   @map("parent_id") // Pour les réponses
+  
+  createdAt             DateTime  @default(now()) @map("created_at")
+  updatedAt             DateTime  @updatedAt @map("updated_at")
+  
+  project               Project   @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  parent                Comment?  @relation("CommentReplies", fields: [parentId], references: [id])
+  replies               Comment[] @relation("CommentReplies")
+  
+  @@map("comments")
+}
+
+model TemplateReview {
+  id                    String    @id @default(uuid())
+  templateId            String    @map("template_id")
+  userId                String    @map("user_id")
+  rating                Int       // 1-5
+  content               String?
+  
+  createdAt             DateTime  @default(now()) @map("created_at")
+  
+  template              Template  @relation(fields: [templateId], references: [id], onDelete: Cascade)
+  
+  @@unique([templateId, userId])
+  @@map("template_reviews")
+}
+
+// Collaboration en temps réel
+model Collaboration {
+  id                    String    @id @default(uuid())
+  projectId             String    @map("project_id")
+  userId                String    @map("user_id")
+  role                  CollaborationRole @default(VIEWER)
+  
+  joinedAt              DateTime  @default(now()) @map("joined_at")
+  lastActiveAt          DateTime  @default(now()) @map("last_active_at")
+  
+  project               Project   @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  user                  User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  @@unique([projectId, userId])
+  @@map("collaborations")
+}
+
+// Sessions utilisateur pour tracking
+model Session {
+  id                    String    @id @default(uuid())
+  userId                String    @map("user_id")
+  sessionToken          String    @unique @map("session_token")
+  expiresAt             DateTime  @map("expires_at")
+  ipAddress             String?   @map("ip_address")
+  userAgent             String?   @map("user_agent")
+  location              String?
+  
+  createdAt             DateTime  @default(now()) @map("created_at")
+  
+  user                  User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  @@map("sessions")
+}
+
+// Clés API pour intégrations
+model ApiKey {
+  id                    String    @id @default(uuid())
+  userId                String    @map("user_id")
+  name                  String
+  keyHash               String    @map("key_hash")
+  permissions           String[]  // Permissions accordées
+  lastUsedAt            DateTime? @map("last_used_at")
+  expiresAt             DateTime? @map("expires_at")
+  
+  createdAt             DateTime  @default(now()) @map("created_at")
+  
+  user                  User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  @@map("api_keys")
+}
+
+// Notifications
+model Notification {
+  id                    String    @id @default(uuid())
+  userId                String    @map("user_id")
+  type                  NotificationType
+  title                 String
+  content               String
+  data                  Json?     // Données supplémentaires
+  isRead                Boolean   @default(false) @map("is_read")
+  
+  createdAt             DateTime  @default(now()) @map("created_at")
+  
+  user                  User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  @@map("notifications")
+}
+
+// Logs d'utilisation pour analytics
+model UsageLog {
+  id                    String    @id @default(uuid())
+  userId                String    @map("user_id")
+  action                String
+  resource              String?
+  metadata              Json?
+  ipAddress             String?   @map("ip_address")
+  
+  createdAt             DateTime  @default(now()) @map("created_at")
+  
+  user                  User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  @@map("usage_logs")
+}
+
+// Enums
+enum Plan {
+  FREE
+  PRO
+  ENTERPRISE
+}
+
+enum Framework {
+  HTML
+  REACT
+  VUE
+  NEXTJS
+  SVELTE
+  ANGULAR
+}
+
+enum Complexity {
+  SIMPLE
+  INTERMEDIATE
+  ADVANCED
+  EXPERT
+}
+
+enum TemplateCategory {
+  LANDING
+  DASHBOARD
+  PORTFOLIO
+  ECOMMERCE
+  BLOG
+  SAAS
+  CORPORATE
+  CREATIVE
+  MINIMAL
+}
+
+enum CollaborationRole {
+  OWNER
+  EDITOR
+  VIEWER
+}
+
+enum NotificationType {
+  PROJECT_SHARED
+  COLLABORATION_INVITE
+  PROJECT_FORKED
+  TEMPLATE_LIKED
+  COMMENT_ADDED
+  SYSTEM
+}

@@ -1,0 +1,20 @@
+# Fichiers à ignorer lors du déploiement sur Render
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.git
+.gitignore
+README.md
+node_modules
+.next
+.cache
+coverage
+.nyc_output
+*.log
+.DS_Store
+.vscode
+.idea
+*.swp
+*.swo
+*~

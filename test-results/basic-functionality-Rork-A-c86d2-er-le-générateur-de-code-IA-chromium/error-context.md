@@ -1,0 +1,146 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e5]:
+        - generic [ref=e6]:
+          - img [ref=e7]
+          - heading "Rork AI Builder" [level=1] [ref=e10]
+          - generic [ref=e11]: Enterprise Edition
+        - generic [ref=e12]:
+          - button "Se connecter" [ref=e13]
+          - button "Commencer" [ref=e14]
+    - generic [ref=e16]:
+      - heading "Construisez des Applications IA en Minutes" [level=1] [ref=e17]:
+        - text: Construisez des Applications IA
+        - generic [ref=e18]: en Minutes
+      - paragraph [ref=e19]: Plateforme complète de création d'applications IA avec génération de code, collaboration temps réel, et outils avancés pour développeurs et entreprises.
+      - generic [ref=e20]:
+        - button "Commencer Gratuitement" [ref=e21]:
+          - img [ref=e22]
+          - text: Commencer Gratuitement
+        - button "Voir la Démo" [ref=e27]
+    - generic [ref=e29]:
+      - generic [ref=e30]:
+        - heading "Fonctionnalités Enterprise" [level=2] [ref=e31]
+        - paragraph [ref=e32]: Tout ce dont vous avez besoin pour créer des applications IA professionnelles
+      - generic [ref=e33]:
+        - generic [ref=e35]:
+          - img [ref=e36]
+          - heading "Génération de Code IA" [level=3] [ref=e39]
+          - paragraph [ref=e40]: Générez du code complet avec l'IA multi-provider (OpenAI, Claude, Gemini)
+        - generic [ref=e42]:
+          - img [ref=e43]
+          - heading "Collaboration Temps Réel" [level=3] [ref=e48]
+          - paragraph [ref=e49]: Travaillez en équipe avec synchronisation temps réel et chat intégré
+        - generic [ref=e51]:
+          - img [ref=e52]
+          - heading "Dashboard Avancé" [level=3] [ref=e54]
+          - paragraph [ref=e55]: Suivez vos projets avec analytics et métriques détaillées
+        - generic [ref=e57]:
+          - img [ref=e58]
+          - heading "Base de Données Multi-Cloud" [level=3] [ref=e62]
+          - paragraph [ref=e63]: PostgreSQL, MongoDB, Redis avec gestion automatique
+        - generic [ref=e65]:
+          - img [ref=e66]
+          - heading "Sécurité Enterprise" [level=3] [ref=e68]
+          - paragraph [ref=e69]: Authentification, autorisation et monitoring de sécurité
+        - generic [ref=e71]:
+          - img [ref=e72]
+          - heading "Déploiement Global" [level=3] [ref=e75]
+          - paragraph [ref=e76]: Déployez sur Vercel, Render, AWS avec CI/CD automatique
+    - generic [ref=e79]:
+      - tablist [ref=e80]:
+        - tab "Générateur IA" [active] [selected] [ref=e81]:
+          - img [ref=e82]
+          - generic [ref=e85]: Générateur IA
+        - tab "Éditeur" [ref=e86]:
+          - img [ref=e87]
+          - generic [ref=e90]: Éditeur
+        - tab "Prompts" [ref=e91]:
+          - img [ref=e92]
+          - generic [ref=e94]: Prompts
+        - tab "Dashboard" [ref=e95]:
+          - img [ref=e96]
+          - generic [ref=e98]: Dashboard
+      - tabpanel "Générateur IA" [ref=e99]:
+        - generic [ref=e100]:
+          - generic [ref=e101]:
+            - generic [ref=e102]:
+              - heading "Configuration de Génération" [level=3] [ref=e103]:
+                - img [ref=e104]
+                - generic [ref=e107]: Configuration de Génération
+              - paragraph [ref=e108]: Configurez le langage et le provider IA pour la génération de code
+            - generic [ref=e110]:
+              - generic [ref=e111]:
+                - generic [ref=e112]: Langage de programmation
+                - generic [ref=e113]:
+                  - button "🟨JavaScript" [ref=e114]:
+                    - generic [ref=e115]: 🟨
+                    - text: JavaScript
+                  - button "🔷TypeScript" [ref=e116]:
+                    - generic [ref=e117]: 🔷
+                    - text: TypeScript
+                  - button "🐍Python" [ref=e118]:
+                    - generic [ref=e119]: 🐍
+                    - text: Python
+                  - button "⚛️React" [ref=e120]:
+                    - generic [ref=e121]: ⚛️
+                    - text: React
+                  - button "▲Next.js" [ref=e122]:
+                    - generic [ref=e123]: ▲
+                    - text: Next.js
+                  - button "💚Vue.js" [ref=e124]:
+                    - generic [ref=e125]: 💚
+                    - text: Vue.js
+                  - button "🅰️Angular" [ref=e126]:
+                    - generic [ref=e127]: 🅰️
+                    - text: Angular
+                  - button "🟢Node.js" [ref=e128]:
+                    - generic [ref=e129]: 🟢
+                    - text: Node.js
+              - generic [ref=e130]:
+                - generic [ref=e131]: Provider IA
+                - generic [ref=e132]:
+                  - button "🤖OpenAI GPT-4" [ref=e133]:
+                    - generic [ref=e134]: 🤖
+                    - text: OpenAI GPT-4
+                  - button "🧠Anthropic Claude" [ref=e135]:
+                    - generic [ref=e136]: 🧠
+                    - text: Anthropic Claude
+                  - button "💎Google Gemini" [ref=e137]:
+                    - generic [ref=e138]: 💎
+                    - text: Google Gemini
+                  - button "🌪️Mistral AI" [ref=e139]:
+                    - generic [ref=e140]: 🌪️
+                    - text: Mistral AI
+          - generic [ref=e141]:
+            - generic [ref=e142]:
+              - heading "Prompt de Génération" [level=3] [ref=e143]:
+                - img [ref=e144]
+                - generic [ref=e147]: Prompt de Génération
+              - paragraph [ref=e148]: Décrivez le code que vous souhaitez générer (comme sur Rork.com)
+            - generic [ref=e150]:
+              - 'textbox "Ex: Crée un composant React pour un bouton avec des animations CSS..." [ref=e151]'
+              - generic [ref=e152]:
+                - generic [ref=e153]:
+                  - generic [ref=e154]:
+                    - img [ref=e155]
+                    - text: JavaScript
+                  - generic [ref=e159]: OpenAI GPT-4
+                - button "Générer le Code" [disabled] [ref=e160]:
+                  - img [ref=e161]
+                  - generic [ref=e163]: Générer le Code
+    - contentinfo [ref=e164]:
+      - generic [ref=e165]:
+        - generic [ref=e166]:
+          - img [ref=e167]
+          - generic [ref=e170]: Rork AI Builder
+          - generic [ref=e171]: Enterprise Edition
+        - paragraph [ref=e172]: © 2024 Rork AI Builder. Tous droits réservés.
+  - button "Open Next.js Dev Tools" [ref=e178] [cursor=pointer]:
+    - img [ref=e179] [cursor=pointer]
+  - alert [ref=e182]
+```

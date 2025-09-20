@@ -1,0 +1,154 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e5]:
+        - generic [ref=e6]:
+          - img [ref=e7]
+          - heading "Rork AI Builder" [level=1] [ref=e10]
+          - generic [ref=e11]: Enterprise Edition
+        - generic [ref=e12]:
+          - button "Se connecter" [ref=e13]
+          - button "Commencer" [ref=e14]
+    - generic [ref=e16]:
+      - heading "Construisez des Applications IA en Minutes" [level=1] [ref=e17]:
+        - text: Construisez des Applications IA
+        - generic [ref=e18]: en Minutes
+      - paragraph [ref=e19]: Plateforme complète de création d'applications IA avec génération de code, collaboration temps réel, et outils avancés pour développeurs et entreprises.
+      - generic [ref=e20]:
+        - button "Commencer Gratuitement" [ref=e21]:
+          - img [ref=e22]
+          - text: Commencer Gratuitement
+        - button "Voir la Démo" [ref=e27]
+    - generic [ref=e29]:
+      - generic [ref=e30]:
+        - heading "Fonctionnalités Enterprise" [level=2] [ref=e31]
+        - paragraph [ref=e32]: Tout ce dont vous avez besoin pour créer des applications IA professionnelles
+      - generic [ref=e33]:
+        - generic [ref=e35]:
+          - img [ref=e36]
+          - heading "Génération de Code IA" [level=3] [ref=e39]
+          - paragraph [ref=e40]: Générez du code complet avec l'IA multi-provider (OpenAI, Claude, Gemini)
+        - generic [ref=e42]:
+          - img [ref=e43]
+          - heading "Collaboration Temps Réel" [level=3] [ref=e48]
+          - paragraph [ref=e49]: Travaillez en équipe avec synchronisation temps réel et chat intégré
+        - generic [ref=e51]:
+          - img [ref=e52]
+          - heading "Dashboard Avancé" [level=3] [ref=e54]
+          - paragraph [ref=e55]: Suivez vos projets avec analytics et métriques détaillées
+        - generic [ref=e57]:
+          - img [ref=e58]
+          - heading "Base de Données Multi-Cloud" [level=3] [ref=e62]
+          - paragraph [ref=e63]: PostgreSQL, MongoDB, Redis avec gestion automatique
+        - generic [ref=e65]:
+          - img [ref=e66]
+          - heading "Sécurité Enterprise" [level=3] [ref=e68]
+          - paragraph [ref=e69]: Authentification, autorisation et monitoring de sécurité
+        - generic [ref=e71]:
+          - img [ref=e72]
+          - heading "Déploiement Global" [level=3] [ref=e75]
+          - paragraph [ref=e76]: Déployez sur Vercel, Render, AWS avec CI/CD automatique
+    - generic [ref=e79]:
+      - tablist [ref=e80]:
+        - tab "Générateur IA" [ref=e81]:
+          - img [ref=e82]
+          - generic [ref=e85]: Générateur IA
+        - tab "Éditeur" [active] [selected] [ref=e86]:
+          - img [ref=e87]
+          - generic [ref=e90]: Éditeur
+        - tab "Prompts" [ref=e91]:
+          - img [ref=e92]
+          - generic [ref=e94]: Prompts
+        - tab "Dashboard" [ref=e95]:
+          - img [ref=e96]
+          - generic [ref=e98]: Dashboard
+      - tabpanel "Éditeur" [ref=e99]:
+        - generic [ref=e100]:
+          - generic [ref=e101]:
+            - generic [ref=e103]:
+              - generic [ref=e104]:
+                - heading "Éditeur de Code" [level=3] [ref=e105]:
+                  - img [ref=e106]
+                  - generic [ref=e109]: Éditeur de Code
+                - generic [ref=e110]:
+                  - generic [ref=e111]: JavaScript
+                  - generic [ref=e112]: Dark
+              - generic [ref=e113]:
+                - button [ref=e114]:
+                  - img [ref=e115]
+                - button [ref=e118]:
+                  - img [ref=e119]
+            - generic [ref=e125]:
+              - generic [ref=e126]:
+                - generic [ref=e127]:
+                  - generic [ref=e128]: "Langage:"
+                  - combobox [ref=e129]:
+                    - option "JavaScript" [selected]
+                    - option "TypeScript"
+                    - option "Python"
+                    - option "React"
+                    - option "HTML"
+                    - option "CSS"
+                    - option "JSON"
+                    - option "Markdown"
+                - generic [ref=e130]:
+                  - generic [ref=e131]: "Thème:"
+                  - combobox [ref=e132]:
+                    - option "Dark" [selected]
+                    - option "Light"
+                    - option "Monokai"
+                    - option "GitHub"
+                - generic [ref=e133]:
+                  - generic [ref=e134]: "Taille:"
+                  - slider [ref=e135]: "14"
+                  - generic [ref=e136]: 14px
+              - generic [ref=e137]:
+                - button "Copier" [ref=e138]:
+                  - img [ref=e139]
+                  - text: Copier
+                - button "Sauvegarder" [ref=e142]:
+                  - img [ref=e143]
+                  - text: Sauvegarder
+                - button "Exécuter" [ref=e147]:
+                  - img [ref=e148]
+                  - generic [ref=e150]: Exécuter
+          - generic [ref=e151]:
+            - generic [ref=e152]:
+              - heading "Code" [level=3] [ref=e154]:
+                - img [ref=e155]
+                - generic [ref=e158]: Code
+              - textbox "Tapez votre code ici..." [ref=e160]: "// Bienvenue dans l'éditeur Rork AI Builder // Tapez votre code ici... function helloWorld() { console.log(\"Hello, Rork AI Builder!\"); return \"Code généré avec succès!\"; } // Décommentez pour tester // helloWorld();"
+            - generic [ref=e161]:
+              - heading "Sortie" [level=3] [ref=e163]:
+                - img [ref=e164]
+                - generic [ref=e166]: Sortie
+              - generic [ref=e169]:
+                - paragraph [ref=e170]: 🚀 Cliquez sur "Exécuter" pour voir les résultats
+                - paragraph [ref=e171]: 💡 Vous pouvez exécuter du code JavaScript, Python, et plus encore!
+          - generic [ref=e174]:
+            - generic [ref=e175]:
+              - generic [ref=e176]: "10"
+              - generic [ref=e177]: Lignes
+            - generic [ref=e178]:
+              - generic [ref=e179]: "26"
+              - generic [ref=e180]: Mots
+            - generic [ref=e181]:
+              - generic [ref=e182]: "221"
+              - generic [ref=e183]: Caractères
+            - generic [ref=e184]:
+              - generic [ref=e185]: 0.22KB
+              - generic [ref=e186]: Taille
+    - contentinfo [ref=e187]:
+      - generic [ref=e188]:
+        - generic [ref=e189]:
+          - img [ref=e190]
+          - generic [ref=e193]: Rork AI Builder
+          - generic [ref=e194]: Enterprise Edition
+        - paragraph [ref=e195]: © 2024 Rork AI Builder. Tous droits réservés.
+  - button "Open Next.js Dev Tools" [ref=e201] [cursor=pointer]:
+    - img [ref=e202] [cursor=pointer]
+  - alert [ref=e205]
+```

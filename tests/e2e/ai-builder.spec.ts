@@ -124,7 +124,7 @@ test.describe('🤖 Rork AI Builder - Tests E2E', () => {
     
     // Vérifier qu'il y a des projets listés
     const projects = page.locator('[data-testid="project-item"]')
-    await expect(projects).toHaveCount.greaterThan(0)
+    await expect(projects.first()).toBeVisible()
   })
 
   test('devrait permettre la navigation entre les onglets', async ({ page }) => {

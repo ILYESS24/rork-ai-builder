@@ -22,8 +22,6 @@ describe('🧪 Tests de Fuzzing - Rork AI Builder', () => {
           fc.string({ 
             minLength: 1, 
             maxLength: 10000,
-            // Inclure des caractères spéciaux, emojis, etc.
-            charCodeFrom: [32, 126], // Caractères imprimables ASCII
           }),
           (prompt) => {
             // Test que la fonction de validation ne crash pas
@@ -135,7 +133,14 @@ export default generatedFunction
             const processTemplate = (input: any): string => {
               let result = input.template
               input.variables.forEach((variable: string, index: number) => {
-                result = result.replace(new RegExp(`\\{${variable}\\}`, 'g'), `value_${index}`)
+                try {
+                  // Échapper les caractères spéciaux regex
+                  const escapedVariable = variable.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+                  result = result.replace(new RegExp(`\\{${escapedVariable}\\}`, 'g'), `value_${index}`)
+                } catch (error) {
+                  // En cas d'erreur regex, utiliser replace simple
+                  result = result.replace(`{${variable}}`, `value_${index}`)
+                }
               })
               return result
             }

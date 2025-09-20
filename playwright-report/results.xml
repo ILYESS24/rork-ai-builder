@@ -1,0 +1,1276 @@
+<testsuites id="" name="" tests="84" failures="77" skipped="0" errors="0" time="415.797527">
+<testsuite name="ai-builder.spec.ts" timestamp="2025-09-20T00:43:36.489Z" hostname="chromium" tests="11" failures="11" skipped="0" time="0.362" errors="0">
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait afficher la page d&apos;accueil pour les utilisateurs non connectés" classname="ai-builder.spec.ts" time="0.068">
+<failure message="ai-builder.spec.ts:10:7 devrait afficher la page d&apos;accueil pour les utilisateurs non connectés" type="FAILURE">
+<![CDATA[  [chromium] › ai-builder.spec.ts:10:7 › 🤖 Rork AI Builder - Tests E2E › devrait afficher la page d'accueil pour les utilisateurs non connectés 
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\chromium_headless_shell-1187\chrome-win\headless_shell.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait permettre la navigation vers la connexion" classname="ai-builder.spec.ts" time="0.039">
+<failure message="ai-builder.spec.ts:20:7 devrait permettre la navigation vers la connexion" type="FAILURE">
+<![CDATA[  [chromium] › ai-builder.spec.ts:20:7 › 🤖 Rork AI Builder - Tests E2E › devrait permettre la navigation vers la connexion 
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\chromium_headless_shell-1187\chrome-win\headless_shell.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait afficher le dashboard pour les utilisateurs connectés" classname="ai-builder.spec.ts" time="0.02">
+<failure message="ai-builder.spec.ts:28:7 devrait afficher le dashboard pour les utilisateurs connectés" type="FAILURE">
+<![CDATA[  [chromium] › ai-builder.spec.ts:28:7 › 🤖 Rork AI Builder - Tests E2E › devrait afficher le dashboard pour les utilisateurs connectés 
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\chromium_headless_shell-1187\chrome-win\headless_shell.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait permettre de générer du code avec l&apos;IA" classname="ai-builder.spec.ts" time="0.027">
+<failure message="ai-builder.spec.ts:44:7 devrait permettre de générer du code avec l&apos;IA" type="FAILURE">
+<![CDATA[  [chromium] › ai-builder.spec.ts:44:7 › 🤖 Rork AI Builder - Tests E2E › devrait permettre de générer du code avec l'IA 
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\chromium_headless_shell-1187\chrome-win\headless_shell.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait afficher les métriques du dashboard" classname="ai-builder.spec.ts" time="0.024">
+<failure message="ai-builder.spec.ts:60:7 devrait afficher les métriques du dashboard" type="FAILURE">
+<![CDATA[  [chromium] › ai-builder.spec.ts:60:7 › 🤖 Rork AI Builder - Tests E2E › devrait afficher les métriques du dashboard 
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\chromium_headless_shell-1187\chrome-win\headless_shell.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait être responsive sur mobile" classname="ai-builder.spec.ts" time="0.044">
+<failure message="ai-builder.spec.ts:71:7 devrait être responsive sur mobile" type="FAILURE">
+<![CDATA[  [chromium] › ai-builder.spec.ts:71:7 › 🤖 Rork AI Builder - Tests E2E › devrait être responsive sur mobile 
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\chromium_headless_shell-1187\chrome-win\headless_shell.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait gérer les erreurs API gracieusement" classname="ai-builder.spec.ts" time="0.03">
+<failure message="ai-builder.spec.ts:82:7 devrait gérer les erreurs API gracieusement" type="FAILURE">
+<![CDATA[  [chromium] › ai-builder.spec.ts:82:7 › 🤖 Rork AI Builder - Tests E2E › devrait gérer les erreurs API gracieusement 
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\chromium_headless_shell-1187\chrome-win\headless_shell.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait permettre la copie du code généré" classname="ai-builder.spec.ts" time="0.039">
+<failure message="ai-builder.spec.ts:101:7 devrait permettre la copie du code généré" type="FAILURE">
+<![CDATA[  [chromium] › ai-builder.spec.ts:101:7 › 🤖 Rork AI Builder - Tests E2E › devrait permettre la copie du code généré 
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\chromium_headless_shell-1187\chrome-win\headless_shell.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait afficher les projets récents" classname="ai-builder.spec.ts" time="0.015">
+<failure message="ai-builder.spec.ts:118:7 devrait afficher les projets récents" type="FAILURE">
+<![CDATA[  [chromium] › ai-builder.spec.ts:118:7 › 🤖 Rork AI Builder - Tests E2E › devrait afficher les projets récents 
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\chromium_headless_shell-1187\chrome-win\headless_shell.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait permettre la navigation entre les onglets" classname="ai-builder.spec.ts" time="0.029">
+<failure message="ai-builder.spec.ts:130:7 devrait permettre la navigation entre les onglets" type="FAILURE">
+<![CDATA[  [chromium] › ai-builder.spec.ts:130:7 › 🤖 Rork AI Builder - Tests E2E › devrait permettre la navigation entre les onglets 
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\chromium_headless_shell-1187\chrome-win\headless_shell.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait respecter le thème sombre/clair" classname="ai-builder.spec.ts" time="0.027">
+<failure message="ai-builder.spec.ts:144:7 devrait respecter le thème sombre/clair" type="FAILURE">
+<![CDATA[  [chromium] › ai-builder.spec.ts:144:7 › 🤖 Rork AI Builder - Tests E2E › devrait respecter le thème sombre/clair 
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\chromium_headless_shell-1187\chrome-win\headless_shell.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="basic.spec.ts" timestamp="2025-09-20T00:43:36.489Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.134" errors="0">
+<testcase name="Basic Tests › should pass basic test" classname="basic.spec.ts" time="0.134">
+</testcase>
+</testsuite>
+<testsuite name="ai-builder.spec.ts" timestamp="2025-09-20T00:43:36.489Z" hostname="firefox" tests="11" failures="11" skipped="0" time="0.467" errors="0">
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait afficher la page d&apos;accueil pour les utilisateurs non connectés" classname="ai-builder.spec.ts" time="0.082">
+<failure message="ai-builder.spec.ts:10:7 devrait afficher la page d&apos;accueil pour les utilisateurs non connectés" type="FAILURE">
+<![CDATA[  [firefox] › ai-builder.spec.ts:10:7 › 🤖 Rork AI Builder - Tests E2E › devrait afficher la page d'accueil pour les utilisateurs non connectés 
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\firefox-1490\firefox\firefox.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait permettre la navigation vers la connexion" classname="ai-builder.spec.ts" time="0.03">
+<failure message="ai-builder.spec.ts:20:7 devrait permettre la navigation vers la connexion" type="FAILURE">
+<![CDATA[  [firefox] › ai-builder.spec.ts:20:7 › 🤖 Rork AI Builder - Tests E2E › devrait permettre la navigation vers la connexion 
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\firefox-1490\firefox\firefox.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait afficher le dashboard pour les utilisateurs connectés" classname="ai-builder.spec.ts" time="0.014">
+<failure message="ai-builder.spec.ts:28:7 devrait afficher le dashboard pour les utilisateurs connectés" type="FAILURE">
+<![CDATA[  [firefox] › ai-builder.spec.ts:28:7 › 🤖 Rork AI Builder - Tests E2E › devrait afficher le dashboard pour les utilisateurs connectés 
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\firefox-1490\firefox\firefox.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait permettre de générer du code avec l&apos;IA" classname="ai-builder.spec.ts" time="0.02">
+<failure message="ai-builder.spec.ts:44:7 devrait permettre de générer du code avec l&apos;IA" type="FAILURE">
+<![CDATA[  [firefox] › ai-builder.spec.ts:44:7 › 🤖 Rork AI Builder - Tests E2E › devrait permettre de générer du code avec l'IA 
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\firefox-1490\firefox\firefox.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait afficher les métriques du dashboard" classname="ai-builder.spec.ts" time="0.03">
+<failure message="ai-builder.spec.ts:60:7 devrait afficher les métriques du dashboard" type="FAILURE">
+<![CDATA[  [firefox] › ai-builder.spec.ts:60:7 › 🤖 Rork AI Builder - Tests E2E › devrait afficher les métriques du dashboard 
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\firefox-1490\firefox\firefox.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait être responsive sur mobile" classname="ai-builder.spec.ts" time="0.051">
+<failure message="ai-builder.spec.ts:71:7 devrait être responsive sur mobile" type="FAILURE">
+<![CDATA[  [firefox] › ai-builder.spec.ts:71:7 › 🤖 Rork AI Builder - Tests E2E › devrait être responsive sur mobile 
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\firefox-1490\firefox\firefox.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait gérer les erreurs API gracieusement" classname="ai-builder.spec.ts" time="0.038">
+<failure message="ai-builder.spec.ts:82:7 devrait gérer les erreurs API gracieusement" type="FAILURE">
+<![CDATA[  [firefox] › ai-builder.spec.ts:82:7 › 🤖 Rork AI Builder - Tests E2E › devrait gérer les erreurs API gracieusement 
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\firefox-1490\firefox\firefox.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait permettre la copie du code généré" classname="ai-builder.spec.ts" time="0.049">
+<failure message="ai-builder.spec.ts:101:7 devrait permettre la copie du code généré" type="FAILURE">
+<![CDATA[  [firefox] › ai-builder.spec.ts:101:7 › 🤖 Rork AI Builder - Tests E2E › devrait permettre la copie du code généré 
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\firefox-1490\firefox\firefox.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait afficher les projets récents" classname="ai-builder.spec.ts" time="0.052">
+<failure message="ai-builder.spec.ts:118:7 devrait afficher les projets récents" type="FAILURE">
+<![CDATA[  [firefox] › ai-builder.spec.ts:118:7 › 🤖 Rork AI Builder - Tests E2E › devrait afficher les projets récents 
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\firefox-1490\firefox\firefox.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait permettre la navigation entre les onglets" classname="ai-builder.spec.ts" time="0.091">
+<failure message="ai-builder.spec.ts:130:7 devrait permettre la navigation entre les onglets" type="FAILURE">
+<![CDATA[  [firefox] › ai-builder.spec.ts:130:7 › 🤖 Rork AI Builder - Tests E2E › devrait permettre la navigation entre les onglets 
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\firefox-1490\firefox\firefox.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait respecter le thème sombre/clair" classname="ai-builder.spec.ts" time="0.01">
+<failure message="ai-builder.spec.ts:144:7 devrait respecter le thème sombre/clair" type="FAILURE">
+<![CDATA[  [firefox] › ai-builder.spec.ts:144:7 › 🤖 Rork AI Builder - Tests E2E › devrait respecter le thème sombre/clair 
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\firefox-1490\firefox\firefox.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="basic.spec.ts" timestamp="2025-09-20T00:43:36.489Z" hostname="firefox" tests="1" failures="0" skipped="0" time="0.059" errors="0">
+<testcase name="Basic Tests › should pass basic test" classname="basic.spec.ts" time="0.059">
+</testcase>
+</testsuite>
+<testsuite name="ai-builder.spec.ts" timestamp="2025-09-20T00:43:36.489Z" hostname="webkit" tests="11" failures="11" skipped="0" time="0.301" errors="0">
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait afficher la page d&apos;accueil pour les utilisateurs non connectés" classname="ai-builder.spec.ts" time="0.012">
+<failure message="ai-builder.spec.ts:10:7 devrait afficher la page d&apos;accueil pour les utilisateurs non connectés" type="FAILURE">
+<![CDATA[  [webkit] › ai-builder.spec.ts:10:7 › 🤖 Rork AI Builder - Tests E2E › devrait afficher la page d'accueil pour les utilisateurs non connectés 
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\webkit-2203\Playwright.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait permettre la navigation vers la connexion" classname="ai-builder.spec.ts" time="0.016">
+<failure message="ai-builder.spec.ts:20:7 devrait permettre la navigation vers la connexion" type="FAILURE">
+<![CDATA[  [webkit] › ai-builder.spec.ts:20:7 › 🤖 Rork AI Builder - Tests E2E › devrait permettre la navigation vers la connexion 
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\webkit-2203\Playwright.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait afficher le dashboard pour les utilisateurs connectés" classname="ai-builder.spec.ts" time="0.014">
+<failure message="ai-builder.spec.ts:28:7 devrait afficher le dashboard pour les utilisateurs connectés" type="FAILURE">
+<![CDATA[  [webkit] › ai-builder.spec.ts:28:7 › 🤖 Rork AI Builder - Tests E2E › devrait afficher le dashboard pour les utilisateurs connectés 
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\webkit-2203\Playwright.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait permettre de générer du code avec l&apos;IA" classname="ai-builder.spec.ts" time="0.018">
+<failure message="ai-builder.spec.ts:44:7 devrait permettre de générer du code avec l&apos;IA" type="FAILURE">
+<![CDATA[  [webkit] › ai-builder.spec.ts:44:7 › 🤖 Rork AI Builder - Tests E2E › devrait permettre de générer du code avec l'IA 
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\webkit-2203\Playwright.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait afficher les métriques du dashboard" classname="ai-builder.spec.ts" time="0.031">
+<failure message="ai-builder.spec.ts:60:7 devrait afficher les métriques du dashboard" type="FAILURE">
+<![CDATA[  [webkit] › ai-builder.spec.ts:60:7 › 🤖 Rork AI Builder - Tests E2E › devrait afficher les métriques du dashboard 
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\webkit-2203\Playwright.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait être responsive sur mobile" classname="ai-builder.spec.ts" time="0.044">
+<failure message="ai-builder.spec.ts:71:7 devrait être responsive sur mobile" type="FAILURE">
+<![CDATA[  [webkit] › ai-builder.spec.ts:71:7 › 🤖 Rork AI Builder - Tests E2E › devrait être responsive sur mobile 
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\webkit-2203\Playwright.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait gérer les erreurs API gracieusement" classname="ai-builder.spec.ts" time="0.036">
+<failure message="ai-builder.spec.ts:82:7 devrait gérer les erreurs API gracieusement" type="FAILURE">
+<![CDATA[  [webkit] › ai-builder.spec.ts:82:7 › 🤖 Rork AI Builder - Tests E2E › devrait gérer les erreurs API gracieusement 
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\webkit-2203\Playwright.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait permettre la copie du code généré" classname="ai-builder.spec.ts" time="0.042">
+<failure message="ai-builder.spec.ts:101:7 devrait permettre la copie du code généré" type="FAILURE">
+<![CDATA[  [webkit] › ai-builder.spec.ts:101:7 › 🤖 Rork AI Builder - Tests E2E › devrait permettre la copie du code généré 
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\webkit-2203\Playwright.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait afficher les projets récents" classname="ai-builder.spec.ts" time="0.018">
+<failure message="ai-builder.spec.ts:118:7 devrait afficher les projets récents" type="FAILURE">
+<![CDATA[  [webkit] › ai-builder.spec.ts:118:7 › 🤖 Rork AI Builder - Tests E2E › devrait afficher les projets récents 
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\webkit-2203\Playwright.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait permettre la navigation entre les onglets" classname="ai-builder.spec.ts" time="0.032">
+<failure message="ai-builder.spec.ts:130:7 devrait permettre la navigation entre les onglets" type="FAILURE">
+<![CDATA[  [webkit] › ai-builder.spec.ts:130:7 › 🤖 Rork AI Builder - Tests E2E › devrait permettre la navigation entre les onglets 
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\webkit-2203\Playwright.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait respecter le thème sombre/clair" classname="ai-builder.spec.ts" time="0.038">
+<failure message="ai-builder.spec.ts:144:7 devrait respecter le thème sombre/clair" type="FAILURE">
+<![CDATA[  [webkit] › ai-builder.spec.ts:144:7 › 🤖 Rork AI Builder - Tests E2E › devrait respecter le thème sombre/clair 
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\webkit-2203\Playwright.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="basic.spec.ts" timestamp="2025-09-20T00:43:36.489Z" hostname="webkit" tests="1" failures="0" skipped="0" time="0.026" errors="0">
+<testcase name="Basic Tests › should pass basic test" classname="basic.spec.ts" time="0.026">
+</testcase>
+</testsuite>
+<testsuite name="ai-builder.spec.ts" timestamp="2025-09-20T00:43:36.489Z" hostname="Mobile Chrome" tests="11" failures="11" skipped="0" time="0.387" errors="0">
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait afficher la page d&apos;accueil pour les utilisateurs non connectés" classname="ai-builder.spec.ts" time="0.039">
+<failure message="ai-builder.spec.ts:10:7 devrait afficher la page d&apos;accueil pour les utilisateurs non connectés" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › ai-builder.spec.ts:10:7 › 🤖 Rork AI Builder - Tests E2E › devrait afficher la page d'accueil pour les utilisateurs non connectés 
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\chromium_headless_shell-1187\chrome-win\headless_shell.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait permettre la navigation vers la connexion" classname="ai-builder.spec.ts" time="0.027">
+<failure message="ai-builder.spec.ts:20:7 devrait permettre la navigation vers la connexion" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › ai-builder.spec.ts:20:7 › 🤖 Rork AI Builder - Tests E2E › devrait permettre la navigation vers la connexion 
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\chromium_headless_shell-1187\chrome-win\headless_shell.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait afficher le dashboard pour les utilisateurs connectés" classname="ai-builder.spec.ts" time="0.049">
+<failure message="ai-builder.spec.ts:28:7 devrait afficher le dashboard pour les utilisateurs connectés" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › ai-builder.spec.ts:28:7 › 🤖 Rork AI Builder - Tests E2E › devrait afficher le dashboard pour les utilisateurs connectés 
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\chromium_headless_shell-1187\chrome-win\headless_shell.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait permettre de générer du code avec l&apos;IA" classname="ai-builder.spec.ts" time="0.017">
+<failure message="ai-builder.spec.ts:44:7 devrait permettre de générer du code avec l&apos;IA" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › ai-builder.spec.ts:44:7 › 🤖 Rork AI Builder - Tests E2E › devrait permettre de générer du code avec l'IA 
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\chromium_headless_shell-1187\chrome-win\headless_shell.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait afficher les métriques du dashboard" classname="ai-builder.spec.ts" time="0.013">
+<failure message="ai-builder.spec.ts:60:7 devrait afficher les métriques du dashboard" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › ai-builder.spec.ts:60:7 › 🤖 Rork AI Builder - Tests E2E › devrait afficher les métriques du dashboard 
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\chromium_headless_shell-1187\chrome-win\headless_shell.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait être responsive sur mobile" classname="ai-builder.spec.ts" time="0.018">
+<failure message="ai-builder.spec.ts:71:7 devrait être responsive sur mobile" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › ai-builder.spec.ts:71:7 › 🤖 Rork AI Builder - Tests E2E › devrait être responsive sur mobile 
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\chromium_headless_shell-1187\chrome-win\headless_shell.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait gérer les erreurs API gracieusement" classname="ai-builder.spec.ts" time="0.01">
+<failure message="ai-builder.spec.ts:82:7 devrait gérer les erreurs API gracieusement" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › ai-builder.spec.ts:82:7 › 🤖 Rork AI Builder - Tests E2E › devrait gérer les erreurs API gracieusement 
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\chromium_headless_shell-1187\chrome-win\headless_shell.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait permettre la copie du code généré" classname="ai-builder.spec.ts" time="0.026">
+<failure message="ai-builder.spec.ts:101:7 devrait permettre la copie du code généré" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › ai-builder.spec.ts:101:7 › 🤖 Rork AI Builder - Tests E2E › devrait permettre la copie du code généré 
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\chromium_headless_shell-1187\chrome-win\headless_shell.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait afficher les projets récents" classname="ai-builder.spec.ts" time="0.026">
+<failure message="ai-builder.spec.ts:118:7 devrait afficher les projets récents" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › ai-builder.spec.ts:118:7 › 🤖 Rork AI Builder - Tests E2E › devrait afficher les projets récents 
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\chromium_headless_shell-1187\chrome-win\headless_shell.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait permettre la navigation entre les onglets" classname="ai-builder.spec.ts" time="0.078">
+<failure message="ai-builder.spec.ts:130:7 devrait permettre la navigation entre les onglets" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › ai-builder.spec.ts:130:7 › 🤖 Rork AI Builder - Tests E2E › devrait permettre la navigation entre les onglets 
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\chromium_headless_shell-1187\chrome-win\headless_shell.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait respecter le thème sombre/clair" classname="ai-builder.spec.ts" time="0.084">
+<failure message="ai-builder.spec.ts:144:7 devrait respecter le thème sombre/clair" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › ai-builder.spec.ts:144:7 › 🤖 Rork AI Builder - Tests E2E › devrait respecter le thème sombre/clair 
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\chromium_headless_shell-1187\chrome-win\headless_shell.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="basic.spec.ts" timestamp="2025-09-20T00:43:36.489Z" hostname="Mobile Chrome" tests="1" failures="0" skipped="0" time="0.051" errors="0">
+<testcase name="Basic Tests › should pass basic test" classname="basic.spec.ts" time="0.051">
+</testcase>
+</testsuite>
+<testsuite name="ai-builder.spec.ts" timestamp="2025-09-20T00:43:36.489Z" hostname="Mobile Safari" tests="11" failures="11" skipped="0" time="0.441" errors="0">
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait afficher la page d&apos;accueil pour les utilisateurs non connectés" classname="ai-builder.spec.ts" time="0.067">
+<failure message="ai-builder.spec.ts:10:7 devrait afficher la page d&apos;accueil pour les utilisateurs non connectés" type="FAILURE">
+<![CDATA[  [Mobile Safari] › ai-builder.spec.ts:10:7 › 🤖 Rork AI Builder - Tests E2E › devrait afficher la page d'accueil pour les utilisateurs non connectés 
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\webkit-2203\Playwright.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait permettre la navigation vers la connexion" classname="ai-builder.spec.ts" time="0.026">
+<failure message="ai-builder.spec.ts:20:7 devrait permettre la navigation vers la connexion" type="FAILURE">
+<![CDATA[  [Mobile Safari] › ai-builder.spec.ts:20:7 › 🤖 Rork AI Builder - Tests E2E › devrait permettre la navigation vers la connexion 
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\webkit-2203\Playwright.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait afficher le dashboard pour les utilisateurs connectés" classname="ai-builder.spec.ts" time="0.022">
+<failure message="ai-builder.spec.ts:28:7 devrait afficher le dashboard pour les utilisateurs connectés" type="FAILURE">
+<![CDATA[  [Mobile Safari] › ai-builder.spec.ts:28:7 › 🤖 Rork AI Builder - Tests E2E › devrait afficher le dashboard pour les utilisateurs connectés 
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\webkit-2203\Playwright.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait permettre de générer du code avec l&apos;IA" classname="ai-builder.spec.ts" time="0.072">
+<failure message="ai-builder.spec.ts:44:7 devrait permettre de générer du code avec l&apos;IA" type="FAILURE">
+<![CDATA[  [Mobile Safari] › ai-builder.spec.ts:44:7 › 🤖 Rork AI Builder - Tests E2E › devrait permettre de générer du code avec l'IA 
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\webkit-2203\Playwright.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait afficher les métriques du dashboard" classname="ai-builder.spec.ts" time="0.022">
+<failure message="ai-builder.spec.ts:60:7 devrait afficher les métriques du dashboard" type="FAILURE">
+<![CDATA[  [Mobile Safari] › ai-builder.spec.ts:60:7 › 🤖 Rork AI Builder - Tests E2E › devrait afficher les métriques du dashboard 
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\webkit-2203\Playwright.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait être responsive sur mobile" classname="ai-builder.spec.ts" time="0.075">
+<failure message="ai-builder.spec.ts:71:7 devrait être responsive sur mobile" type="FAILURE">
+<![CDATA[  [Mobile Safari] › ai-builder.spec.ts:71:7 › 🤖 Rork AI Builder - Tests E2E › devrait être responsive sur mobile 
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\webkit-2203\Playwright.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait gérer les erreurs API gracieusement" classname="ai-builder.spec.ts" time="0.013">
+<failure message="ai-builder.spec.ts:82:7 devrait gérer les erreurs API gracieusement" type="FAILURE">
+<![CDATA[  [Mobile Safari] › ai-builder.spec.ts:82:7 › 🤖 Rork AI Builder - Tests E2E › devrait gérer les erreurs API gracieusement 
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\webkit-2203\Playwright.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait permettre la copie du code généré" classname="ai-builder.spec.ts" time="0.056">
+<failure message="ai-builder.spec.ts:101:7 devrait permettre la copie du code généré" type="FAILURE">
+<![CDATA[  [Mobile Safari] › ai-builder.spec.ts:101:7 › 🤖 Rork AI Builder - Tests E2E › devrait permettre la copie du code généré 
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\webkit-2203\Playwright.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait afficher les projets récents" classname="ai-builder.spec.ts" time="0.049">
+<failure message="ai-builder.spec.ts:118:7 devrait afficher les projets récents" type="FAILURE">
+<![CDATA[  [Mobile Safari] › ai-builder.spec.ts:118:7 › 🤖 Rork AI Builder - Tests E2E › devrait afficher les projets récents 
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\webkit-2203\Playwright.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait permettre la navigation entre les onglets" classname="ai-builder.spec.ts" time="0.021">
+<failure message="ai-builder.spec.ts:130:7 devrait permettre la navigation entre les onglets" type="FAILURE">
+<![CDATA[  [Mobile Safari] › ai-builder.spec.ts:130:7 › 🤖 Rork AI Builder - Tests E2E › devrait permettre la navigation entre les onglets 
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\webkit-2203\Playwright.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait respecter le thème sombre/clair" classname="ai-builder.spec.ts" time="0.018">
+<failure message="ai-builder.spec.ts:144:7 devrait respecter le thème sombre/clair" type="FAILURE">
+<![CDATA[  [Mobile Safari] › ai-builder.spec.ts:144:7 › 🤖 Rork AI Builder - Tests E2E › devrait respecter le thème sombre/clair 
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\webkit-2203\Playwright.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="basic.spec.ts" timestamp="2025-09-20T00:43:36.489Z" hostname="Mobile Safari" tests="1" failures="0" skipped="0" time="0.032" errors="0">
+<testcase name="Basic Tests › should pass basic test" classname="basic.spec.ts" time="0.032">
+</testcase>
+</testsuite>
+<testsuite name="ai-builder.spec.ts" timestamp="2025-09-20T00:43:36.489Z" hostname="Microsoft Edge" tests="11" failures="11" skipped="0" time="21.496" errors="0">
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait afficher la page d&apos;accueil pour les utilisateurs non connectés" classname="ai-builder.spec.ts" time="1.649">
+<failure message="ai-builder.spec.ts:10:7 devrait afficher la page d&apos;accueil pour les utilisateurs non connectés" type="FAILURE">
+<![CDATA[  [Microsoft Edge] › ai-builder.spec.ts:10:7 › 🤖 Rork AI Builder - Tests E2E › devrait afficher la page d'accueil pour les utilisateurs non connectés 
+
+    Error: browserContext.newPage: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\ffmpeg-1011\ffmpeg-win64.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait permettre la navigation vers la connexion" classname="ai-builder.spec.ts" time="3.013">
+<failure message="ai-builder.spec.ts:20:7 devrait permettre la navigation vers la connexion" type="FAILURE">
+<![CDATA[  [Microsoft Edge] › ai-builder.spec.ts:20:7 › 🤖 Rork AI Builder - Tests E2E › devrait permettre la navigation vers la connexion 
+
+    Error: browserContext.newPage: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\ffmpeg-1011\ffmpeg-win64.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait afficher le dashboard pour les utilisateurs connectés" classname="ai-builder.spec.ts" time="1.849">
+<failure message="ai-builder.spec.ts:28:7 devrait afficher le dashboard pour les utilisateurs connectés" type="FAILURE">
+<![CDATA[  [Microsoft Edge] › ai-builder.spec.ts:28:7 › 🤖 Rork AI Builder - Tests E2E › devrait afficher le dashboard pour les utilisateurs connectés 
+
+    Error: browserContext.newPage: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\ffmpeg-1011\ffmpeg-win64.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait permettre de générer du code avec l&apos;IA" classname="ai-builder.spec.ts" time="2.109">
+<failure message="ai-builder.spec.ts:44:7 devrait permettre de générer du code avec l&apos;IA" type="FAILURE">
+<![CDATA[  [Microsoft Edge] › ai-builder.spec.ts:44:7 › 🤖 Rork AI Builder - Tests E2E › devrait permettre de générer du code avec l'IA 
+
+    Error: browserContext.newPage: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\ffmpeg-1011\ffmpeg-win64.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait afficher les métriques du dashboard" classname="ai-builder.spec.ts" time="1.378">
+<failure message="ai-builder.spec.ts:60:7 devrait afficher les métriques du dashboard" type="FAILURE">
+<![CDATA[  [Microsoft Edge] › ai-builder.spec.ts:60:7 › 🤖 Rork AI Builder - Tests E2E › devrait afficher les métriques du dashboard 
+
+    Error: browserContext.newPage: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\ffmpeg-1011\ffmpeg-win64.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait être responsive sur mobile" classname="ai-builder.spec.ts" time="1.473">
+<failure message="ai-builder.spec.ts:71:7 devrait être responsive sur mobile" type="FAILURE">
+<![CDATA[  [Microsoft Edge] › ai-builder.spec.ts:71:7 › 🤖 Rork AI Builder - Tests E2E › devrait être responsive sur mobile 
+
+    Error: browserContext.newPage: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\ffmpeg-1011\ffmpeg-win64.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait gérer les erreurs API gracieusement" classname="ai-builder.spec.ts" time="1.53">
+<failure message="ai-builder.spec.ts:82:7 devrait gérer les erreurs API gracieusement" type="FAILURE">
+<![CDATA[  [Microsoft Edge] › ai-builder.spec.ts:82:7 › 🤖 Rork AI Builder - Tests E2E › devrait gérer les erreurs API gracieusement 
+
+    Error: browserContext.newPage: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\ffmpeg-1011\ffmpeg-win64.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait permettre la copie du code généré" classname="ai-builder.spec.ts" time="1.333">
+<failure message="ai-builder.spec.ts:101:7 devrait permettre la copie du code généré" type="FAILURE">
+<![CDATA[  [Microsoft Edge] › ai-builder.spec.ts:101:7 › 🤖 Rork AI Builder - Tests E2E › devrait permettre la copie du code généré 
+
+    Error: browserContext.newPage: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\ffmpeg-1011\ffmpeg-win64.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait afficher les projets récents" classname="ai-builder.spec.ts" time="3.095">
+<failure message="ai-builder.spec.ts:118:7 devrait afficher les projets récents" type="FAILURE">
+<![CDATA[  [Microsoft Edge] › ai-builder.spec.ts:118:7 › 🤖 Rork AI Builder - Tests E2E › devrait afficher les projets récents 
+
+    Error: browserContext.newPage: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\ffmpeg-1011\ffmpeg-win64.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait permettre la navigation entre les onglets" classname="ai-builder.spec.ts" time="3.127">
+<failure message="ai-builder.spec.ts:130:7 devrait permettre la navigation entre les onglets" type="FAILURE">
+<![CDATA[  [Microsoft Edge] › ai-builder.spec.ts:130:7 › 🤖 Rork AI Builder - Tests E2E › devrait permettre la navigation entre les onglets 
+
+    Error: browserContext.newPage: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\ffmpeg-1011\ffmpeg-win64.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait respecter le thème sombre/clair" classname="ai-builder.spec.ts" time="0.94">
+<failure message="ai-builder.spec.ts:144:7 devrait respecter le thème sombre/clair" type="FAILURE">
+<![CDATA[  [Microsoft Edge] › ai-builder.spec.ts:144:7 › 🤖 Rork AI Builder - Tests E2E › devrait respecter le thème sombre/clair 
+
+    Error: browserContext.newPage: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\ffmpeg-1011\ffmpeg-win64.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="basic.spec.ts" timestamp="2025-09-20T00:43:36.489Z" hostname="Microsoft Edge" tests="1" failures="0" skipped="0" time="0.039" errors="0">
+<testcase name="Basic Tests › should pass basic test" classname="basic.spec.ts" time="0.039">
+</testcase>
+</testsuite>
+<testsuite name="ai-builder.spec.ts" timestamp="2025-09-20T00:43:36.489Z" hostname="Google Chrome" tests="11" failures="11" skipped="0" time="11.934" errors="0">
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait afficher la page d&apos;accueil pour les utilisateurs non connectés" classname="ai-builder.spec.ts" time="0.847">
+<failure message="ai-builder.spec.ts:10:7 devrait afficher la page d&apos;accueil pour les utilisateurs non connectés" type="FAILURE">
+<![CDATA[  [Google Chrome] › ai-builder.spec.ts:10:7 › 🤖 Rork AI Builder - Tests E2E › devrait afficher la page d'accueil pour les utilisateurs non connectés 
+
+    Error: browserContext.newPage: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\ffmpeg-1011\ffmpeg-win64.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait permettre la navigation vers la connexion" classname="ai-builder.spec.ts" time="0.971">
+<failure message="ai-builder.spec.ts:20:7 devrait permettre la navigation vers la connexion" type="FAILURE">
+<![CDATA[  [Google Chrome] › ai-builder.spec.ts:20:7 › 🤖 Rork AI Builder - Tests E2E › devrait permettre la navigation vers la connexion 
+
+    Error: browserContext.newPage: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\ffmpeg-1011\ffmpeg-win64.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait afficher le dashboard pour les utilisateurs connectés" classname="ai-builder.spec.ts" time="1.167">
+<failure message="ai-builder.spec.ts:28:7 devrait afficher le dashboard pour les utilisateurs connectés" type="FAILURE">
+<![CDATA[  [Google Chrome] › ai-builder.spec.ts:28:7 › 🤖 Rork AI Builder - Tests E2E › devrait afficher le dashboard pour les utilisateurs connectés 
+
+    Error: browserContext.newPage: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\ffmpeg-1011\ffmpeg-win64.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait permettre de générer du code avec l&apos;IA" classname="ai-builder.spec.ts" time="1.331">
+<failure message="ai-builder.spec.ts:44:7 devrait permettre de générer du code avec l&apos;IA" type="FAILURE">
+<![CDATA[  [Google Chrome] › ai-builder.spec.ts:44:7 › 🤖 Rork AI Builder - Tests E2E › devrait permettre de générer du code avec l'IA 
+
+    Error: browserContext.newPage: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\ffmpeg-1011\ffmpeg-win64.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait afficher les métriques du dashboard" classname="ai-builder.spec.ts" time="0.649">
+<failure message="ai-builder.spec.ts:60:7 devrait afficher les métriques du dashboard" type="FAILURE">
+<![CDATA[  [Google Chrome] › ai-builder.spec.ts:60:7 › 🤖 Rork AI Builder - Tests E2E › devrait afficher les métriques du dashboard 
+
+    Error: browserContext.newPage: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\ffmpeg-1011\ffmpeg-win64.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait être responsive sur mobile" classname="ai-builder.spec.ts" time="0.714">
+<failure message="ai-builder.spec.ts:71:7 devrait être responsive sur mobile" type="FAILURE">
+<![CDATA[  [Google Chrome] › ai-builder.spec.ts:71:7 › 🤖 Rork AI Builder - Tests E2E › devrait être responsive sur mobile 
+
+    Error: browserContext.newPage: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\ffmpeg-1011\ffmpeg-win64.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait gérer les erreurs API gracieusement" classname="ai-builder.spec.ts" time="1.627">
+<failure message="ai-builder.spec.ts:82:7 devrait gérer les erreurs API gracieusement" type="FAILURE">
+<![CDATA[  [Google Chrome] › ai-builder.spec.ts:82:7 › 🤖 Rork AI Builder - Tests E2E › devrait gérer les erreurs API gracieusement 
+
+    Error: browserContext.newPage: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\ffmpeg-1011\ffmpeg-win64.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait permettre la copie du code généré" classname="ai-builder.spec.ts" time="1.293">
+<failure message="ai-builder.spec.ts:101:7 devrait permettre la copie du code généré" type="FAILURE">
+<![CDATA[  [Google Chrome] › ai-builder.spec.ts:101:7 › 🤖 Rork AI Builder - Tests E2E › devrait permettre la copie du code généré 
+
+    Error: browserContext.newPage: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\ffmpeg-1011\ffmpeg-win64.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait afficher les projets récents" classname="ai-builder.spec.ts" time="1.065">
+<failure message="ai-builder.spec.ts:118:7 devrait afficher les projets récents" type="FAILURE">
+<![CDATA[  [Google Chrome] › ai-builder.spec.ts:118:7 › 🤖 Rork AI Builder - Tests E2E › devrait afficher les projets récents 
+
+    Error: browserContext.newPage: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\ffmpeg-1011\ffmpeg-win64.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait permettre la navigation entre les onglets" classname="ai-builder.spec.ts" time="1.114">
+<failure message="ai-builder.spec.ts:130:7 devrait permettre la navigation entre les onglets" type="FAILURE">
+<![CDATA[  [Google Chrome] › ai-builder.spec.ts:130:7 › 🤖 Rork AI Builder - Tests E2E › devrait permettre la navigation entre les onglets 
+
+    Error: browserContext.newPage: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\ffmpeg-1011\ffmpeg-win64.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="🤖 Rork AI Builder - Tests E2E › devrait respecter le thème sombre/clair" classname="ai-builder.spec.ts" time="1.156">
+<failure message="ai-builder.spec.ts:144:7 devrait respecter le thème sombre/clair" type="FAILURE">
+<![CDATA[  [Google Chrome] › ai-builder.spec.ts:144:7 › 🤖 Rork AI Builder - Tests E2E › devrait respecter le thème sombre/clair 
+
+    Error: browserContext.newPage: Executable doesn't exist at C:\Users\lecoa\AppData\Local\ms-playwright\ffmpeg-1011\ffmpeg-win64.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="basic.spec.ts" timestamp="2025-09-20T00:43:36.489Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="0.04" errors="0">
+<testcase name="Basic Tests › should pass basic test" classname="basic.spec.ts" time="0.04">
+</testcase>
+</testsuite>
+</testsuites>

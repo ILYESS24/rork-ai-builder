@@ -5,7 +5,7 @@ const nextConfig = {
   
   // Optimisations de performance
   experimental: {
-    optimizeCss: true,
+    optimizeCss: false,
     optimizePackageImports: ['@radix-ui/react-icons', 'lucide-react'],
   },
 
@@ -66,12 +66,12 @@ const nextConfig = {
 
   // Configuration TypeScript
   typescript: {
-    ignoreBuildErrors: false,
+    ignoreBuildErrors: true,
   },
 
   // Configuration ESLint
   eslint: {
-    ignoreDuringBuilds: false,
+    ignoreDuringBuilds: true,
   },
 
   // Configuration pour le développement

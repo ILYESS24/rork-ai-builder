@@ -4,6 +4,9 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import CodeGenerator from '@/components/ai/CodeGenerator'
+import AdvancedEditor from '@/components/editor/AdvancedEditor'
+import PromptSystem from '@/components/prompts/PromptSystem'
 import { 
   Sparkles, 
   Code, 
@@ -13,7 +16,10 @@ import {
   Globe,
   Database,
   Shield,
-  Rocket
+  Rocket,
+  MessageSquare,
+  FileText,
+  Terminal
 } from 'lucide-react'
 
 export default function HomePage() {
@@ -143,10 +149,18 @@ export default function HomePage() {
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <Tabs defaultValue="generator" className="w-full">
-            <TabsList className="grid w-full grid-cols-2 mb-8">
+            <TabsList className="grid w-full grid-cols-4 mb-8">
               <TabsTrigger value="generator" className="flex items-center space-x-2">
                 <Code className="h-4 w-4" />
                 <span>Générateur IA</span>
+              </TabsTrigger>
+              <TabsTrigger value="editor" className="flex items-center space-x-2">
+                <FileText className="h-4 w-4" />
+                <span>Éditeur</span>
+              </TabsTrigger>
+              <TabsTrigger value="prompts" className="flex items-center space-x-2">
+                <MessageSquare className="h-4 w-4" />
+                <span>Prompts</span>
               </TabsTrigger>
               <TabsTrigger value="dashboard" className="flex items-center space-x-2">
                 <BarChart3 className="h-4 w-4" />
@@ -155,29 +169,15 @@ export default function HomePage() {
             </TabsList>
 
             <TabsContent value="generator" className="space-y-6">
-              <Card>
-                <CardHeader>
-                  <CardTitle className="flex items-center space-x-2">
-                    <Zap className="h-5 w-5 text-yellow-500" />
-                    <span>Générer du Code IA</span>
-                  </CardTitle>
-                  <CardDescription>
-                    Utilisez l&apos;intelligence artificielle pour générer du code de qualité professionnelle
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="text-center py-12">
-                    <Code className="h-16 w-16 text-gray-400 mx-auto mb-4" />
-                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                      Générateur de Code IA
-                    </h3>
-                    <p className="text-gray-600 dark:text-gray-300 mb-4">
-                      Connectez-vous pour accéder au générateur de code avancé
-                    </p>
-                    <Button>Se connecter pour continuer</Button>
-                  </div>
-                </CardContent>
-              </Card>
+              <CodeGenerator />
+            </TabsContent>
+
+            <TabsContent value="editor" className="space-y-6">
+              <AdvancedEditor />
+            </TabsContent>
+
+            <TabsContent value="prompts" className="space-y-6">
+              <PromptSystem />
             </TabsContent>
 
             <TabsContent value="dashboard" className="space-y-6">
